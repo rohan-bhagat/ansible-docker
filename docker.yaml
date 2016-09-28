@@ -1,0 +1,8 @@
+#This ansible playbook will install docker on localhost
+- hosts: localhost
+  sudo: yes
+  tasks:
+    -name: Install docker on the system
+     package: name=docker state=latest
+    -name: Enable and start the docker service
+     service: name=docker enabled=yes state=started
