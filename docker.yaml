@@ -6,3 +6,5 @@
      package: name=docker state=latest
     -name: Enable and start the docker service
      service: name=docker enabled=yes state=started
+    -name: Install docker-compose on the system
+     package: name=docker-compose state=latest
