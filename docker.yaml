@@ -1,3 +1,4 @@
+---
 #This ansible playbook will install docker on localhost
 - hosts: localhost
   sudo: yes
